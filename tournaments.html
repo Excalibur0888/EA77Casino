@@ -3,11 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Join exciting tournaments at EA77 casino and compete for massive prize pools. Daily, weekly, and monthly competitions with big rewards for winners.">
+    <meta name="keywords" content="EA77 tournaments, EA77 competitions, EA77 prize pools, EA77 slot tournaments, EA77 poker tournaments">
+    <link rel="icon" href="images/favicon.ico">
     <title>EA77 Tournaments — Compete and Win Big Prizes!</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/ticker.css">
     <link rel="stylesheet" href="css/tournaments.css">
-    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="css/animations.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
@@ -22,13 +25,15 @@
 							<div><span class="ticker-label">ETH:</span> <span class="ticker-value">$3,120</span></div>
 							<div><span class="ticker-label">USDT:</span> <span class="ticker-value">$1.00</span></div>
 					</div>
-					<div class="winners-label">Weekly Winners:</div>
-					<div class="ticker-winners">
-							<div class="ticker-winner">🏆 <strong>Rahim123</strong>&nbsp;won <span class="win-amount">$12,345</span> in Slots!</div>
-							<div class="ticker-winner">🏆 <strong>TasnimB</strong>&nbsp;won <span class="win-amount">৳1,200,000</span> in Roulette!</div>
-							<div class="ticker-winner">🏆 <strong>NaimaX</strong>&nbsp;won <span class="win-amount">0.5 BTC</span> in Lottery!</div>
-							<div class="ticker-winner">🏆 <strong>Shakil99</strong>&nbsp;won <span class="win-amount">$150,000</span> in Poker!</div>
-							<div class="ticker-winner">🏆 <strong>SumaiyaR</strong>&nbsp;won <span class="win-amount">€25,000</span> in Blackjack!</div>
+					<div class="winners-container">
+							<div class="winners-label">Weekly Winners:</div>
+							<div class="ticker-winners">
+									<div class="ticker-winner">🏆 <strong>Rahim123</strong>&nbsp;won <span class="win-amount">$12,345</span> in Slots!</div>
+									<div class="ticker-winner">🏆 <strong>TasnimB</strong>&nbsp;won <span class="win-amount">৳1,200,000</span> in Roulette!</div>
+									<div class="ticker-winner">🏆 <strong>NaimaX</strong>&nbsp;won <span class="win-amount">0.5 BTC</span> in Lottery!</div>
+									<div class="ticker-winner">🏆 <strong>Shakil99</strong>&nbsp;won <span class="win-amount">$150,000</span> in Poker!</div>
+									<div class="ticker-winner">🏆 <strong>SumaiyaR</strong>&nbsp;won <span class="win-amount">€25,000</span> in Blackjack!</div>
+							</div>
 					</div>
 			</div>
 	</div>
@@ -36,7 +41,7 @@
     <!-- Header -->
     <header class="main-header">
 			<div class="container">
-					<div class="logo">
+					<div class="logo fade-in">
 							<a href="index.html">
 									<img src="images/logo.jpg" alt="EA77 Casino Logo">
 							</a>
@@ -48,27 +53,27 @@
 									<span></span>
 							</button>
 							<ul class="nav-list">
-									<li><a href="index.html">Home</a></li>
-									<li><a href="registration.html">Registration</a></li>
-									<li><a href="games.html">Games</a></li>
-									<li><a href="bonuses.html">Bonuses</a></li>
-									<li><a href="about.html">About Us</a></li>
-									<li><a href="tournaments.html" class="active">Tournaments</a></li>
-									<li><a href="payments.html">Payments</a></li>
-									<li><a href="mobile.html">Mobile</a></li>
-									<li><a href="support.html">Support</a></li>
+									<li class="fade-in-down delay-100"><a href="index.html">Home</a></li>
+									<li class="fade-in-down delay-200"><a href="registration.html">Registration</a></li>
+									<li class="fade-in-down delay-300"><a href="games.html">Games</a></li>
+									<li class="fade-in-down delay-400"><a href="bonuses.html">Bonuses</a></li>
+									<li class="fade-in-down delay-500"><a href="about.html">About Us</a></li>
+									<li class="fade-in-down delay-600"><a href="tournaments.html" class="active">Tournaments</a></li>
+									<li class="fade-in-down delay-700"><a href="payments.html">Payments</a></li>
+									<li class="fade-in-down delay-800"><a href="mobile.html">Mobile</a></li>
+									<li class="fade-in-down delay-900"><a href="support.html">Support</a></li>
 							</ul>
 					</nav>
-			</div>	
+			</div>
 	</header>
 
     <!-- Page Hero -->
     <section class="page-hero">
         <div class="container">
             <div class="page-hero-content">
-                <h1>EA77 Tournaments — Compete and Win Big Prizes!</h1>
-                <p>Join our exciting tournaments, showcase your skills, and climb the leaderboards to win amazing prizes.</p>
-                <div class="hero-buttons">
+                <h1 class="fade-in-up">EA77 Tournaments — Compete and Win Big Prizes!</h1>
+                <p class="fade-in-up delay-300">Join our exciting tournaments, showcase your skills, and climb the leaderboards to win amazing prizes.</p>
+                <div class="hero-buttons fade-in-up delay-500">
                     <a href="#tournaments-section" class="btn btn-primary btn-large animated-btn">View Tournaments</a>
                     <a href="registration.html" class="btn btn-secondary btn-large">Register to Participate</a>
                 </div>
@@ -86,57 +91,21 @@
             <div class="tournaments-grid">
                 <div class="tournament-category">
                     <div class="category-icon">
-                        <svg viewBox="0 0 24 24" width="40" height="40" fill="currentColor">
-                            <path d="M21,2H3C2.45,2,2,2.45,2,3v18c0,0.55,0.45,1,1,1h18c0.55,0,1-0.45,1-1V3C22,2.45,21.55,2,21,2z"/>
-                            <path d="M19,20H5V4h14V20z" fill="#111827"/>
-                            <rect x="7" y="6" width="10" height="3" rx="0.5" fill="#111827"/>
-                            <circle cx="9" cy="12" r="1.5" fill="#111827"/>
-                            <circle cx="12" cy="12" r="1.5" fill="#111827"/>
-                            <circle cx="15" cy="12" r="1.5" fill="#111827"/>
-                            <circle cx="9" cy="16" r="1.5" fill="#111827"/>
-                            <circle cx="12" cy="16" r="1.5" fill="#111827"/>
-                            <circle cx="15" cy="16" r="1.5" fill="#111827"/>
-                            <path d="M17,6h2v2h-2V6z" fill="#111827"/>
-                            <path d="M17,10h2v2h-2V10z" fill="#111827"/>
-                            <path d="M17,14h2v2h-2V14z" fill="#111827"/>
-                            <path d="M5,6h2v2H5V6z" fill="#111827"/>
-                            <path d="M5,10h2v2H5V10z" fill="#111827"/>
-                            <path d="M5,14h2v2H5V14z" fill="#111827"/>
-                        </svg>
+                        <i class="fas fa-coins"></i>
                     </div>
                     <h3>Slots Tournaments</h3>
                     <p>Compete on popular slots and climb the leaderboard to win big prizes</p>
                 </div>
                 <div class="tournament-category">
                     <div class="category-icon">
-                        <svg viewBox="0 0 24 24" width="40" height="40" fill="currentColor">
-                            <circle cx="12" cy="12" r="10"/>
-                            <circle cx="12" cy="12" r="8" fill="#111827"/>
-                            <circle cx="12" cy="12" r="1.5"/>
-                            <path d="M12,4 L12,6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-                            <path d="M12,18 L12,20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-                            <path d="M4,12 L6,12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-                            <path d="M18,12 L20,12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-                            <path d="M6.34,6.34 L7.76,7.76" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-                            <path d="M16.24,16.24 L17.66,17.66" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-                            <path d="M6.34,17.66 L7.76,16.24" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-                            <path d="M16.24,7.76 L17.66,6.34" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-                        </svg>
+                        <i class="fas fa-sync-alt"></i>
                     </div>
                     <h3>Roulette Tournaments</h3>
                     <p>Show your strategy skills in our roulette tournaments with huge prize pools</p>
                 </div>
                 <div class="tournament-category">
                     <div class="category-icon">
-                        <svg viewBox="0 0 24 24" width="40" height="40" fill="currentColor">
-                            <path d="M21,2H3C2.45,2,2,2.45,2,3v18c0,0.55,0.45,1,1,1h18c0.55,0,1-0.45,1-1V3C22,2.45,21.55,2,21,2z"/>
-                            <path d="M19,20H5V4h14V20z" fill="#111827"/>
-                            <path d="M9,8 h6 l-3,-5 z" fill="#111827"/>
-                            <path d="M9,16 h6 l-3,5 z" fill="#111827"/>
-                            <rect x="8" y="9" width="8" height="6" rx="1" fill="#111827"/>
-                            <path d="M10,11 L14,13" stroke="currentColor" stroke-width="1" stroke-linecap="round"/>
-                            <path d="M10,13 L14,11" stroke="currentColor" stroke-width="1" stroke-linecap="round"/>
-                        </svg>
+                        <i class="fas fa-crown"></i>
                     </div>
                     <h3>Poker Tournaments</h3>
                     <p>Join our poker tournaments and compete against the best players</p>
@@ -397,7 +366,7 @@
             <div class="footer-grid">
                 <div class="footer-about">
                     <a href="index.html" class="footer-logo">
-                        <img src="img/logo.png" alt="EA77 Casino Logo">
+                        <img src="images/logo.jpg" alt="EA77 Casino Logo">
                     </a>
                     <p>EA77 is a licensed online casino offering a wide selection of games, generous bonuses, and secure payment options.</p>
                 </div>
@@ -461,6 +430,8 @@
     </div>
 
     <script src="js/main.js"></script>
+    <script src="js/ticker.js"></script>
     <script src="js/tournaments.js"></script>
+    <script src="js/animations.js"></script>
 </body>
 </html> 

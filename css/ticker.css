@@ -7,7 +7,7 @@
     height: 40px;
     background-color: var(--black);
     color: var(--white);
-    z-index: 1000;
+    z-index: 8;
     overflow: hidden;
     border-bottom: 1px solid var(--dark-gold);
     display: flex;
@@ -46,6 +46,15 @@
     font-weight: 600;
 }
 
+/* Добавляем стили для winners-container на десктопе */
+.winners-container {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    position: relative;
+    height: 100%;
+}
+
 .winners-label {
     color: var(--gold);
     font-weight: 600;
@@ -76,6 +85,7 @@
     justify-content: flex-start;
     /* Using a sequential timing animation instead of delay-based approach */
     animation: none;
+    left: 0;
 }
 
 /* Sequential animation logic via JavaScript instead of CSS delays */
@@ -175,7 +185,7 @@
 
 /* Animation class that will be applied via JavaScript */
 .animate-ticker {
-    animation: ticker-right 12s linear forwards;
+    animation: ticker-right 10s linear forwards;
 }
 
 /* Responsive Ticker */
@@ -213,17 +223,27 @@
         padding: 0 10px 5px;
     }
     
+    /* Переопределяем стили для winners-container на мобильных */
+    .winners-container {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        border-top: 1px solid rgba(255, 215, 0, 0.3);
+        padding-top: 5px;
+    }
+    
     .winners-label {
-        padding: 5px 10px 0;
+        padding: 0 10px;
         margin: 0;
         border-left: none;
-        border-top: 1px solid rgba(255, 215, 0, 0.3);
-        width: 100%;
+        font-size: 0.75rem;
+        white-space: nowrap;
     }
     
     .ticker-winners {
-        width: 100%;
-        padding-top: 5px;
+        width: auto;
+        flex: 1;
+        height: 25px;
     }
     
     .ticker-winner {
@@ -231,6 +251,6 @@
     }
     
     .main-header {
-        top: 70px;
+        top: 60px;
     }
 } 

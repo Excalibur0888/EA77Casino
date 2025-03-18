@@ -3,10 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about EA77's payment methods: fast deposits, secure withdrawals, and multiple currency options including BDT, USD, EUR, and cryptocurrencies.">
+    <meta name="keywords" content="EA77 payments, EA77 deposits, EA77 withdrawals, EA77 banking methods, EA77 cryptocurrency, EA77 BDT payments">
+    <link rel="icon" href="images/favicon.ico">
     <title>Payments and Withdrawals at EA77 — Fast, Secure, and Convenient!</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/ticker.css">
     <link rel="stylesheet" href="css/payments.css">
+    <link rel="stylesheet" href="css/animations.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <!-- Ticker -->
@@ -20,21 +25,23 @@
 							<div><span class="ticker-label">ETH:</span> <span class="ticker-value">$3,120</span></div>
 							<div><span class="ticker-label">USDT:</span> <span class="ticker-value">$1.00</span></div>
 					</div>
-					<div class="winners-label">Weekly Winners:</div>
-					<div class="ticker-winners">
+                    <div class="winners-container">
+					    <div class="winners-label">Weekly Winners:</div>
+					    <div class="ticker-winners">
 							<div class="ticker-winner">🏆 <strong>Rahim123</strong>&nbsp;won <span class="win-amount">$12,345</span> in Slots!</div>
 							<div class="ticker-winner">🏆 <strong>TasnimB</strong>&nbsp;won <span class="win-amount">৳1,200,000</span> in Roulette!</div>
 							<div class="ticker-winner">🏆 <strong>NaimaX</strong>&nbsp;won <span class="win-amount">0.5 BTC</span> in Lottery!</div>
 							<div class="ticker-winner">🏆 <strong>Shakil99</strong>&nbsp;won <span class="win-amount">$150,000</span> in Poker!</div>
 							<div class="ticker-winner">🏆 <strong>SumaiyaR</strong>&nbsp;won <span class="win-amount">€25,000</span> in Blackjack!</div>
-					</div>
+					    </div>
+                    </div>
 			</div>
 	</div>
 
     <!-- Header -->
     <header class="main-header">
 			<div class="container">
-					<div class="logo">
+					<div class="logo fade-in">
 							<a href="index.html">
 									<img src="images/logo.jpg" alt="EA77 Casino Logo">
 							</a>
@@ -46,15 +53,15 @@
 									<span></span>
 							</button>
 							<ul class="nav-list">
-									<li><a href="index.html">Home</a></li>
-									<li><a href="registration.html">Registration</a></li>
-									<li><a href="games.html">Games</a></li>
-									<li><a href="bonuses.html">Bonuses</a></li>
-									<li><a href="about.html">About Us</a></li>
-									<li><a href="tournaments.html">Tournaments</a></li>
-									<li><a href="payments.html" class="active">Payments</a></li>
-									<li><a href="mobile.html">Mobile</a></li>
-									<li><a href="support.html">Support</a></li>
+									<li class="fade-in-down delay-100"><a href="index.html">Home</a></li>
+									<li class="fade-in-down delay-200"><a href="registration.html">Registration</a></li>
+									<li class="fade-in-down delay-300"><a href="games.html">Games</a></li>
+									<li class="fade-in-down delay-400"><a href="bonuses.html">Bonuses</a></li>
+									<li class="fade-in-down delay-500"><a href="about.html">About Us</a></li>
+									<li class="fade-in-down delay-600"><a href="tournaments.html">Tournaments</a></li>
+									<li class="fade-in-down delay-700"><a href="payments.html" class="active">Payments</a></li>
+									<li class="fade-in-down delay-800"><a href="mobile.html">Mobile</a></li>
+									<li class="fade-in-down delay-900"><a href="support.html">Support</a></li>
 							</ul>
 					</nav>
 			</div>
@@ -64,8 +71,8 @@
     <section class="page-hero">
         <div class="container">
             <div class="page-hero-content">
-                <h1>Payments and Withdrawals at EA77 — Fast, Secure, and Convenient!</h1>
-                <p>We offer a wide range of payment methods to make your deposits and withdrawals as smooth as possible.</p>
+                <h1 class="fade-in-up">Payments and Withdrawals at EA77 — Fast, Secure, and Convenient!</h1>
+                <p class="fade-in-up delay-300">We offer a wide range of payment methods to make your deposits and withdrawals as smooth as possible.</p>
             </div>
         </div>
     </section>
@@ -76,343 +83,221 @@
             <h2 class="section-title">Our Payment Methods</h2>
             <p class="section-description">We support various payment options to cater to players from around the world.</p>
             
-            <div class="payment-categories">
-                <div class="category-tabs">
-                    <div class="category-tab active" data-target="mobile-payments">Mobile Payments</div>
-                    <div class="category-tab" data-target="bank-cards">Bank Cards</div>
-                    <div class="category-tab" data-target="crypto">Cryptocurrencies</div>
-                    <div class="category-tab" data-target="e-wallets">E-Wallets</div>
+            <div class="payment-grid">
+                <div class="payment-method">
+                    <div class="method-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Nagad</h3>
+                    <div class="method-details">
+                        <div class="detail-row">
+                            <span class="detail-label">Min Deposit:</span>
+                            <span class="detail-value">৳500</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Max Deposit:</span>
+                            <span class="detail-value">৳100,000</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Processing Time:</span>
+                            <span class="detail-value">Instant</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Fee:</span>
+                            <span class="detail-value">Free</span>
+                        </div>
+                    </div>
+                    <a href="https://wacucoun.com/ysPW8S7r" class="btn btn-primary">Deposit Now</a>
                 </div>
                 
-                <div class="category-content">
-                    <!-- Mobile Payments -->
-                    <div class="payment-category active" id="mobile-payments">
-                        <div class="methods-grid">
-                            <div class="payment-method">
-                                <div class="method-icon">
-                                    <img src="img/payments/nagad.png" alt="Nagad">
-                                </div>
-                                <h3>Nagad</h3>
-                                <div class="method-details">
-                                    <div class="detail-row">
-                                        <span class="detail-label">Min Deposit:</span>
-                                        <span class="detail-value">৳500</span>
-                                    </div>
-                                    <div class="detail-row">
-                                        <span class="detail-label">Max Deposit:</span>
-                                        <span class="detail-value">৳100,000</span>
-                                    </div>
-                                    <div class="detail-row">
-                                        <span class="detail-label">Processing Time:</span>
-                                        <span class="detail-value">Instant</span>
-                                    </div>
-                                    <div class="detail-row">
-                                        <span class="detail-label">Fee:</span>
-                                        <span class="detail-value">Free</span>
-                                    </div>
-                                </div>
-                                <a href="#" class="btn btn-primary">Deposit Now</a>
-                            </div>
-                            
-                            <div class="payment-method">
-                                <div class="method-icon">
-                                    <img src="img/payments/bkash.png" alt="bKash">
-                                </div>
-                                <h3>bKash</h3>
-                                <div class="method-details">
-                                    <div class="detail-row">
-                                        <span class="detail-label">Min Deposit:</span>
-                                        <span class="detail-value">৳500</span>
-                                    </div>
-                                    <div class="detail-row">
-                                        <span class="detail-label">Max Deposit:</span>
-                                        <span class="detail-value">৳100,000</span>
-                                    </div>
-                                    <div class="detail-row">
-                                        <span class="detail-label">Processing Time:</span>
-                                        <span class="detail-value">Instant</span>
-                                    </div>
-                                    <div class="detail-row">
-                                        <span class="detail-label">Fee:</span>
-                                        <span class="detail-value">Free</span>
-                                    </div>
-                                </div>
-                                <a href="#" class="btn btn-primary">Deposit Now</a>
-                            </div>
+                <div class="payment-method">
+                    <div class="method-icon">
+                        <i class="fas fa-credit-card"></i>
+                    </div>
+                    <h3>bKash</h3>
+                    <div class="method-details">
+                        <div class="detail-row">
+                            <span class="detail-label">Min Deposit:</span>
+                            <span class="detail-value">৳500</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Max Deposit:</span>
+                            <span class="detail-value">৳100,000</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Processing Time:</span>
+                            <span class="detail-value">Instant</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Fee:</span>
+                            <span class="detail-value">Free</span>
                         </div>
                     </div>
-                    
-                    <!-- Bank Cards -->
-                    <div class="payment-category" id="bank-cards">
-                        <div class="methods-grid">
-                            <div class="payment-method">
-                                <div class="method-icon">
-                                    <img src="img/payments/visa.png" alt="Visa">
-                                </div>
-                                <h3>Visa</h3>
-                                <div class="method-details">
-                                    <div class="detail-row">
-                                        <span class="detail-label">Min Deposit:</span>
-                                        <span class="detail-value">$20</span>
-                                    </div>
-                                    <div class="detail-row">
-                                        <span class="detail-label">Max Deposit:</span>
-                                        <span class="detail-value">$5,000</span>
-                                    </div>
-                                    <div class="detail-row">
-                                        <span class="detail-label">Processing Time:</span>
-                                        <span class="detail-value">Instant</span>
-                                    </div>
-                                    <div class="detail-row">
-                                        <span class="detail-label">Fee:</span>
-                                        <span class="detail-value">2.5%</span>
-                                    </div>
-                                </div>
-                                <a href="#" class="btn btn-primary">Deposit Now</a>
-                            </div>
-                            
-                            <div class="payment-method">
-                                <div class="method-icon">
-                                    <img src="img/payments/mastercard.png" alt="MasterCard">
-                                </div>
-                                <h3>MasterCard</h3>
-                                <div class="method-details">
-                                    <div class="detail-row">
-                                        <span class="detail-label">Min Deposit:</span>
-                                        <span class="detail-value">$20</span>
-                                    </div>
-                                    <div class="detail-row">
-                                        <span class="detail-label">Max Deposit:</span>
-                                        <span class="detail-value">$5,000</span>
-                                    </div>
-                                    <div class="detail-row">
-                                        <span class="detail-label">Processing Time:</span>
-                                        <span class="detail-value">Instant</span>
-                                    </div>
-                                    <div class="detail-row">
-                                        <span class="detail-label">Fee:</span>
-                                        <span class="detail-value">2.5%</span>
-                                    </div>
-                                </div>
-                                <a href="#" class="btn btn-primary">Deposit Now</a>
-                            </div>
+                    <a href="https://wacucoun.com/ysPW8S7r" class="btn btn-primary">Deposit Now</a>
+                </div>
+                
+                <div class="payment-method">
+                    <div class="method-icon">
+                        <i class="fab fa-paypal"></i>
+                    </div>
+                    <h3>PayPal</h3>
+                    <div class="method-details">
+                        <div class="detail-row">
+                            <span class="detail-label">Min Deposit:</span>
+                            <span class="detail-value">$20</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Max Deposit:</span>
+                            <span class="detail-value">$10,000</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Processing Time:</span>
+                            <span class="detail-value">Instant</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Fee:</span>
+                            <span class="detail-value">Free</span>
                         </div>
                     </div>
-                    
-                    <!-- Cryptocurrencies -->
-                    <div class="payment-category" id="crypto">
-                        <div class="methods-grid">
-                            <div class="payment-method">
-                                <div class="method-icon">
-                                    <img src="img/payments/bitcoin.png" alt="Bitcoin">
-                                </div>
-                                <h3>Bitcoin</h3>
-                                <div class="method-details">
-                                    <div class="detail-row">
-                                        <span class="detail-label">Min Deposit:</span>
-                                        <span class="detail-value">0.001 BTC</span>
-                                    </div>
-                                    <div class="detail-row">
-                                        <span class="detail-label">Max Deposit:</span>
-                                        <span class="detail-value">No Limit</span>
-                                    </div>
-                                    <div class="detail-row">
-                                        <span class="detail-label">Processing Time:</span>
-                                        <span class="detail-value">1 Confirmation</span>
-                                    </div>
-                                    <div class="detail-row">
-                                        <span class="detail-label">Fee:</span>
-                                        <span class="detail-value">Free</span>
-                                    </div>
-                                </div>
-                                <a href="#" class="btn btn-primary">Deposit Now</a>
-                            </div>
-                            
-                            <div class="payment-method">
-                                <div class="method-icon">
-                                    <img src="img/payments/ethereum.png" alt="Ethereum">
-                                </div>
-                                <h3>Ethereum</h3>
-                                <div class="method-details">
-                                    <div class="detail-row">
-                                        <span class="detail-label">Min Deposit:</span>
-                                        <span class="detail-value">0.01 ETH</span>
-                                    </div>
-                                    <div class="detail-row">
-                                        <span class="detail-label">Max Deposit:</span>
-                                        <span class="detail-value">No Limit</span>
-                                    </div>
-                                    <div class="detail-row">
-                                        <span class="detail-label">Processing Time:</span>
-                                        <span class="detail-value">5 Confirmations</span>
-                                    </div>
-                                    <div class="detail-row">
-                                        <span class="detail-label">Fee:</span>
-                                        <span class="detail-value">Free</span>
-                                    </div>
-                                </div>
-                                <a href="#" class="btn btn-primary">Deposit Now</a>
-                            </div>
-                            
-                            <div class="payment-method">
-                                <div class="method-icon">
-                                    <img src="img/payments/usdt.png" alt="USDT">
-                                </div>
-                                <h3>USDT</h3>
-                                <div class="method-details">
-                                    <div class="detail-row">
-                                        <span class="detail-label">Min Deposit:</span>
-                                        <span class="detail-value">20 USDT</span>
-                                    </div>
-                                    <div class="detail-row">
-                                        <span class="detail-label">Max Deposit:</span>
-                                        <span class="detail-value">No Limit</span>
-                                    </div>
-                                    <div class="detail-row">
-                                        <span class="detail-label">Processing Time:</span>
-                                        <span class="detail-value">2 Confirmations</span>
-                                    </div>
-                                    <div class="detail-row">
-                                        <span class="detail-label">Fee:</span>
-                                        <span class="detail-value">Free</span>
-                                    </div>
-                                </div>
-                                <a href="#" class="btn btn-primary">Deposit Now</a>
-                            </div>
+                    <a href="https://wacucoun.com/ysPW8S7r" class="btn btn-primary">Deposit Now</a>
+                </div>
+                
+                <div class="payment-method">
+                    <div class="method-icon">
+                        <i class="fab fa-bitcoin"></i>
+                    </div>
+                    <h3>Bitcoin</h3>
+                    <div class="method-details">
+                        <div class="detail-row">
+                            <span class="detail-label">Min Deposit:</span>
+                            <span class="detail-value">0.001 BTC</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Max Deposit:</span>
+                            <span class="detail-value">No Limit</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Processing Time:</span>
+                            <span class="detail-value">1 Confirmation</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Fee:</span>
+                            <span class="detail-value">Free</span>
                         </div>
                     </div>
-                    
-                    <!-- E-Wallets -->
-                    <div class="payment-category" id="e-wallets">
-                        <div class="methods-grid">
-                            <div class="payment-method">
-                                <div class="method-icon">
-                                    <img src="img/payments/paypal.png" alt="PayPal">
-                                </div>
-                                <h3>PayPal</h3>
-                                <div class="method-details">
-                                    <div class="detail-row">
-                                        <span class="detail-label">Min Deposit:</span>
-                                        <span class="detail-value">$20</span>
-                                    </div>
-                                    <div class="detail-row">
-                                        <span class="detail-label">Max Deposit:</span>
-                                        <span class="detail-value">$10,000</span>
-                                    </div>
-                                    <div class="detail-row">
-                                        <span class="detail-label">Processing Time:</span>
-                                        <span class="detail-value">Instant</span>
-                                    </div>
-                                    <div class="detail-row">
-                                        <span class="detail-label">Fee:</span>
-                                        <span class="detail-value">Free</span>
-                                    </div>
-                                </div>
-                                <a href="#" class="btn btn-primary">Deposit Now</a>
-                            </div>
+                    <a href="https://wacucoun.com/ysPW8S7r" class="btn btn-primary">Deposit Now</a>
+                </div>
+                
+                <div class="payment-method">
+                    <div class="method-icon">
+                        <i class="fab fa-ethereum"></i>
+                    </div>
+                    <h3>Ethereum</h3>
+                    <div class="method-details">
+                        <div class="detail-row">
+                            <span class="detail-label">Min Deposit:</span>
+                            <span class="detail-value">0.01 ETH</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Max Deposit:</span>
+                            <span class="detail-value">No Limit</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Processing Time:</span>
+                            <span class="detail-value">5 Confirmations</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Fee:</span>
+                            <span class="detail-value">Free</span>
                         </div>
                     </div>
+                    <a href="https://wacucoun.com/ysPW8S7r" class="btn btn-primary">Deposit Now</a>
+                </div>
+                
+                <div class="payment-method">
+                    <div class="method-icon">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                    <h3>USDT</h3>
+                    <div class="method-details">
+                        <div class="detail-row">
+                            <span class="detail-label">Min Deposit:</span>
+                            <span class="detail-value">20 USDT</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Max Deposit:</span>
+                            <span class="detail-value">No Limit</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Processing Time:</span>
+                            <span class="detail-value">2 Confirmations</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Fee:</span>
+                            <span class="detail-value">Free</span>
+                        </div>
+                    </div>
+                    <a href="https://wacucoun.com/ysPW8S7r" class="btn btn-primary">Deposit Now</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Withdrawal Process -->
-    <section class="withdrawal-process">
+    <!-- Withdrawal Timeframes -->
+    <section class="withdrawal-timeframes">
         <div class="container">
-            <h2 class="section-title">Withdrawal Process</h2>
-            <p class="section-description">We aim to make withdrawals as fast and simple as possible. Here's how it works:</p>
-            
-            <div class="process-steps">
-                <div class="process-step">
-                    <div class="step-icon">
-                        <span>1</span>
-                    </div>
-                    <div class="step-content">
-                        <h3>Request a Withdrawal</h3>
-                        <p>Log in to your account, navigate to the Cashier section, and select Withdraw. Choose your preferred withdrawal method and enter the amount.</p>
-                    </div>
-                </div>
-                
-                <div class="process-step">
-                    <div class="step-icon">
-                        <span>2</span>
-                    </div>
-                    <div class="step-content">
-                        <h3>Verification</h3>
-                        <p>If it's your first withdrawal, you may need to verify your identity. This is a one-time process to ensure the security of your funds.</p>
-                    </div>
-                </div>
-                
-                <div class="process-step">
-                    <div class="step-icon">
-                        <span>3</span>
-                    </div>
-                    <div class="step-content">
-                        <h3>Processing</h3>
-                        <p>Our team will process your withdrawal request. The processing time depends on the payment method you selected.</p>
-                    </div>
-                </div>
-                
-                <div class="process-step">
-                    <div class="step-icon">
-                        <span>4</span>
-                    </div>
-                    <div class="step-content">
-                        <h3>Receive Your Funds</h3>
-                        <p>After processing, your funds will be sent to your selected payment method. You'll receive a confirmation email once the transaction is complete.</p>
-                    </div>
-                </div>
-            </div>
+            <h2 class="section-title">Withdrawal Timeframes</h2>
+            <p class="section-description">Check the processing times for withdrawals across different payment methods.</p>
             
             <div class="withdrawal-table">
-                <h3>Withdrawal Timeframes</h3>
-                <div class="table-header">
-                    <div class="header-cell">Payment Method</div>
-                    <div class="header-cell">Processing Time</div>
-                    <div class="header-cell">Min Withdrawal</div>
-                    <div class="header-cell">Max Withdrawal</div>
-                    <div class="header-cell">Fee</div>
-                </div>
-                
-                <div class="table-row">
-                    <div class="table-cell">Nagad</div>
-                    <div class="table-cell">Within 24 hours</div>
-                    <div class="table-cell">৳1,000</div>
-                    <div class="table-cell">৳200,000</div>
-                    <div class="table-cell">Free</div>
-                </div>
-                
-                <div class="table-row">
-                    <div class="table-cell">bKash</div>
-                    <div class="table-cell">Within 24 hours</div>
-                    <div class="table-cell">৳1,000</div>
-                    <div class="table-cell">৳200,000</div>
-                    <div class="table-cell">Free</div>
-                </div>
-                
-                <div class="table-row">
-                    <div class="table-cell">Bank Cards</div>
-                    <div class="table-cell">3-5 business days</div>
-                    <div class="table-cell">$50</div>
-                    <div class="table-cell">$5,000</div>
-                    <div class="table-cell">$5 or 3%</div>
-                </div>
-                
-                <div class="table-row">
-                    <div class="table-cell">Cryptocurrencies</div>
-                    <div class="table-cell">Within 1 hour</div>
-                    <div class="table-cell">$20 equivalent</div>
-                    <div class="table-cell">No Limit</div>
-                    <div class="table-cell">Network fee</div>
-                </div>
-                
-                <div class="table-row">
-                    <div class="table-cell">PayPal</div>
-                    <div class="table-cell">Within 24 hours</div>
-                    <div class="table-cell">$20</div>
-                    <div class="table-cell">$10,000</div>
-                    <div class="table-cell">Free</div>
+                <div class="table-wrapper">
+                    <div class="table-header">
+                        <div class="header-cell">Payment Method</div>
+                        <div class="header-cell">Processing Time</div>
+                        <div class="header-cell">Min Withdrawal</div>
+                        <div class="header-cell">Max Withdrawal</div>
+                        <div class="header-cell">Fee</div>
+                    </div>
+                    
+                    <div class="table-row">
+                        <div class="table-cell">Nagad</div>
+                        <div class="table-cell">Within 24 hours</div>
+                        <div class="table-cell">৳1,000</div>
+                        <div class="table-cell">৳200,000</div>
+                        <div class="table-cell">Free</div>
+                    </div>
+                    
+                    <div class="table-row">
+                        <div class="table-cell">bKash</div>
+                        <div class="table-cell">Within 24 hours</div>
+                        <div class="table-cell">৳1,000</div>
+                        <div class="table-cell">৳200,000</div>
+                        <div class="table-cell">Free</div>
+                    </div>
+                    
+                    <div class="table-row">
+                        <div class="table-cell">Bank Cards</div>
+                        <div class="table-cell">3-5 business days</div>
+                        <div class="table-cell">$50</div>
+                        <div class="table-cell">$5,000</div>
+                        <div class="table-cell">$5 or 3%</div>
+                    </div>
+                    
+                    <div class="table-row">
+                        <div class="table-cell">Cryptocurrencies</div>
+                        <div class="table-cell">Within 1 hour</div>
+                        <div class="table-cell">$20 equivalent</div>
+                        <div class="table-cell">No Limit</div>
+                        <div class="table-cell">Network fee</div>
+                    </div>
+                    
+                    <div class="table-row">
+                        <div class="table-cell">PayPal</div>
+                        <div class="table-cell">Within 24 hours</div>
+                        <div class="table-cell">$20</div>
+                        <div class="table-cell">$10,000</div>
+                        <div class="table-cell">Free</div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -427,7 +312,7 @@
             <div class="security-features">
                 <div class="security-feature">
                     <div class="feature-icon">
-                        <i class="icon-encryption"></i>
+                        <i class="fas fa-lock"></i>
                     </div>
                     <h3>SSL Encryption</h3>
                     <p>All transactions are protected by industry-standard 256-bit SSL encryption to ensure your data remains private and secure.</p>
@@ -435,7 +320,7 @@
                 
                 <div class="security-feature">
                     <div class="feature-icon">
-                        <i class="icon-shield"></i>
+                        <i class="fas fa-shield-alt"></i>
                     </div>
                     <h3>Fraud Protection</h3>
                     <p>Our advanced fraud detection systems monitor all transactions to prevent unauthorized access and protect your funds.</p>
@@ -443,7 +328,7 @@
                 
                 <div class="security-feature">
                     <div class="feature-icon">
-                        <i class="icon-verification"></i>
+                        <i class="fas fa-id-card"></i>
                     </div>
                     <h3>Identity Verification</h3>
                     <p>We implement KYC procedures to verify player identities, ensuring compliance with international regulations and preventing fraud.</p>
@@ -451,7 +336,7 @@
                 
                 <div class="security-feature">
                     <div class="feature-icon">
-                        <i class="icon-privacy"></i>
+                        <i class="fas fa-user-shield"></i>
                     </div>
                     <h3>Privacy Protection</h3>
                     <p>Your financial information is never stored on our servers, and we adhere to strict privacy policies to protect your personal data.</p>
@@ -472,62 +357,63 @@
     </section>
 
     <!-- Footer -->
-    <footer class="main-footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-about">
-                    <a href="index.html" class="footer-logo">
-                        <img src="img/logo.png" alt="EA77 Casino Logo">
-                    </a>
-                    <p>EA77 is a licensed online casino offering a wide selection of games, generous bonuses, and secure payment options.</p>
-                </div>
-                
-                <div class="footer-nav">
-                    <h3>Quick Links</h3>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="games.html">Games</a></li>
-                        <li><a href="bonuses.html">Bonuses</a></li>
-                        <li><a href="tournaments.html">Tournaments</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="payments.html">Payments</a></li>
-                        <li><a href="mobile.html">Mobile</a></li>
-                        <li><a href="support.html">Support</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-payments">
-                    <h3>Payment Methods</h3>
-                    <div class="payment-icons">
-                        <span class="payment-icon">Nagad</span>
-                        <span class="payment-icon">bKash</span>
-                        <span class="payment-icon">PayPal</span>
-                        <span class="payment-icon">Bitcoin</span>
-                        <span class="payment-icon">Ethereum</span>
-                        <span class="payment-icon">USDT</span>
-                        <span class="payment-icon">Visa</span>
-                        <span class="payment-icon">Mastercard</span>
-                    </div>
-                </div>
-                
-                <div class="footer-support">
-                    <h3>Support</h3>
-                    <p>Need help? Our support team is available 24/7 to assist you.</p>
-                    <a href="support.html" class="btn btn-primary">Contact Support</a>
-                </div>
-            </div>
-            
-            <div class="footer-bottom">
-                <p>© 2025 EA77 Casino. All rights reserved. 18+ | Play Responsibly</p>
-                <div class="social-icons">
-                    <a href="#" class="social-icon"><i class="icon-facebook"></i></a>
-                    <a href="#" class="social-icon"><i class="icon-twitter"></i></a>
-                    <a href="#" class="social-icon"><i class="icon-instagram"></i></a>
-                    <a href="#" class="social-icon"><i class="icon-telegram"></i></a>
-                </div>
-            </div>
-        </div>
-    </footer>
+	<footer class="main-footer">
+		<div class="container">
+			<div class="footer-grid">
+				<div class="footer-about">
+					<a href="index.html" class="footer-logo">
+						<img src="images/logo.jpg" alt="EA77 Casino Logo">
+					</a>
+					<p>EA77 is a licensed online casino offering a wide selection of games, generous bonuses, and secure payment options.</p>
+				</div>
+				
+				<div class="footer-nav">
+					<h3>Quick Links</h3>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="games.html">Games</a></li>
+						<li><a href="bonuses.html">Bonuses</a></li>
+						<li><a href="tournaments.html">Tournaments</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="payments.html">Payments</a></li>
+						<li><a href="mobile.html">Mobile</a></li>
+						<li><a href="support.html">Support</a></li>
+					</ul>
+				</div>
+				
+				<div class="footer-payments">
+					<h3>Payment Methods</h3>
+					<div class="payment-icons">
+						<span class="payment-icon">Nagad</span>
+						<span class="payment-icon">bKash</span>
+						<span class="payment-icon">PayPal</span>
+						<span class="payment-icon">Bitcoin</span>
+						<span class="payment-icon">Ethereum</span>
+						<span class="payment-icon">USDT</span>
+						<span class="payment-icon">Visa</span>
+						<span class="payment-icon">Mastercard</span>
+					</div>
+				</div>
+				
+				<div class="footer-support">
+					<h3>Support</h3>
+					<p>Need help? Our support team is available 24/7 to assist you.</p>
+					<a href="support.html" class="btn btn-primary">Contact Support</a>
+				</div>
+			</div>
+			
+			<div class="footer-bottom">
+				<p>© 2025 EA77 Casino. All rights reserved. 18+ | Play Responsibly</p>
+				<div class="social-icons">
+					<a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+					<a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+					<a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+					<a href="#" class="social-icon"><i class="fab fa-telegram-plane"></i></a>
+					<a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+				</div>
+			</div>
+		</div>
+	</footer>
 
     <!-- Background Animation -->
     <div class="bg-animation">
@@ -540,6 +426,8 @@
     </div>
 
     <script src="js/main.js"></script>
+    <script src="js/ticker.js"></script>
     <script src="js/payments.js"></script>
+    <script src="js/animations.js"></script>
 </body>
 </html> 
