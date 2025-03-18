@@ -1,0 +1,538 @@
+/* Mobile Casino Page Specific Styles */
+
+/* Mobile App Showcase */
+.mobile-showcase {
+    padding: var(--spacing-xl) 0;
+}
+
+.showcase-content {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xl);
+    flex-wrap: wrap;
+}
+
+.showcase-text {
+    flex: 1;
+    min-width: 300px;
+}
+
+.showcase-text h2 {
+    color: var(--gold);
+    margin-bottom: var(--spacing-md);
+}
+
+.showcase-text p {
+    margin-bottom: var(--spacing-lg);
+    color: var(--white);
+}
+
+.features-list {
+    margin-top: var(--spacing-xl);
+}
+
+.feature-item {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-lg);
+}
+
+.feature-icon {
+    width: 50px;
+    height: 50px;
+    background-color: rgba(255, 215, 0, 0.1);
+    border: 2px solid var(--gold);
+    border-radius: var(--border-radius-circle);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--gold);
+    font-size: var(--font-size-xl);
+    flex-shrink: 0;
+}
+
+.feature-text h3 {
+    color: var(--green);
+    margin-bottom: var(--spacing-xs);
+}
+
+.feature-text p {
+    margin-bottom: 0;
+    font-size: var(--font-size-sm);
+    color: var(--white);
+}
+
+.showcase-image {
+    flex: 1;
+    min-width: 300px;
+    text-align: center;
+    position: relative;
+}
+
+.showcase-image img {
+    max-width: 100%;
+    border-radius: var(--border-radius-md);
+    box-shadow: var(--shadow-lg);
+}
+
+.platform-badges {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-md);
+}
+
+.platform-badges img {
+    height: 40px;
+    width: auto;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+/* Download Section */
+.download-section {
+    padding: var(--spacing-xl) 0;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.download-options {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-xl);
+    margin-top: var(--spacing-lg);
+    flex-wrap: wrap;
+}
+
+.download-option {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: var(--border-radius-lg);
+    padding: var(--spacing-lg);
+    width: 100%;
+    max-width: 350px;
+    text-align: center;
+    border: 1px solid var(--dark-gold);
+    transition: all 0.3s ease;
+}
+
+.download-option:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--gold);
+}
+
+.platform-icon {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto var(--spacing-md);
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: var(--border-radius-circle);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--font-size-2xl);
+    color: var(--white);
+}
+
+.download-option h3 {
+    color: var(--gold);
+    margin-bottom: var(--spacing-xs);
+}
+
+.download-option p {
+    color: var(--light-gray);
+    margin-bottom: var(--spacing-md);
+    font-size: var(--font-size-sm);
+}
+
+.google-play-link,
+.app-store-link {
+    display: block;
+    margin: var(--spacing-md) 0;
+}
+
+.google-play-link img,
+.app-store-link img {
+    height: 40px;
+    width: auto;
+}
+
+.qr-code {
+    margin-top: var(--spacing-md);
+    border-top: 1px dashed rgba(255, 215, 0, 0.2);
+    padding-top: var(--spacing-md);
+}
+
+.qr-code img {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto var(--spacing-xs);
+}
+
+.qr-code span {
+    display: block;
+    color: var(--light-gray);
+    font-size: var(--font-size-sm);
+}
+
+.browser-play {
+    max-width: 600px;
+    margin: var(--spacing-xl) auto 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: var(--border-radius-lg);
+    padding: var(--spacing-lg);
+    text-align: center;
+    border: 1px solid var(--dark-gold);
+}
+
+.browser-play h3 {
+    color: var(--gold);
+    margin-bottom: var(--spacing-sm);
+}
+
+.browser-play p {
+    color: var(--white);
+    margin-bottom: var(--spacing-md);
+}
+
+/* Installation Guide */
+.installation-guide {
+    padding: var(--spacing-xl) 0;
+}
+
+.tabs {
+    max-width: 800px;
+    margin: var(--spacing-xl) auto 0;
+}
+
+.tab-headers {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-lg);
+}
+
+.tab-header {
+    padding: var(--spacing-sm) var(--spacing-lg);
+    background-color: var(--dark-gray);
+    color: var(--white);
+    border: 1px solid var(--dark-gold);
+    border-radius: var(--border-radius-md);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.tab-header:hover {
+    background-color: rgba(255, 215, 0, 0.1);
+}
+
+.tab-header.active {
+    background-color: var(--green);
+    color: var(--black);
+    border-color: var(--green);
+}
+
+.tab-pane {
+    display: none;
+}
+
+.tab-pane.active {
+    display: block;
+}
+
+.steps-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.step-item {
+    display: flex;
+    gap: var(--spacing-lg);
+    margin-bottom: var(--spacing-lg);
+    position: relative;
+}
+
+.step-item:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    top: 50px;
+    left: 25px;
+    width: 2px;
+    height: calc(100% - 25px);
+    background-color: var(--dark-gold);
+}
+
+.step-number {
+    width: 50px;
+    height: 50px;
+    border-radius: var(--border-radius-circle);
+    background-color: var(--dark-gold);
+    color: var(--black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--font-size-lg);
+    font-weight: 700;
+    flex-shrink: 0;
+    z-index: 2;
+}
+
+.step-content {
+    flex-grow: 1;
+}
+
+.step-content h3 {
+    color: var(--gold);
+    margin-bottom: var(--spacing-sm);
+}
+
+.step-content p {
+    color: var(--white);
+}
+
+/* Mobile Games Showcase */
+.mobile-games {
+    padding: var(--spacing-xl) 0;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.games-slider {
+    position: relative;
+    max-width: 1200px;
+    margin: var(--spacing-lg) auto;
+    padding: 0 30px;
+}
+
+.slider-container {
+    display: flex;
+    gap: var(--spacing-lg);
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: var(--spacing-md) 0;
+    scrollbar-width: none; /* Firefox */
+}
+
+.slider-container::-webkit-scrollbar {
+    display: none; /* Chrome, Safari and Opera */
+}
+
+.game-slide {
+    flex: 0 0 250px;
+    background-color: var(--dark-gray);
+    border-radius: var(--border-radius-md);
+    overflow: hidden;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+}
+
+.game-slide:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--green);
+}
+
+.game-image {
+    height: 150px;
+    position: relative;
+    overflow: hidden;
+}
+
+.game-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.game-slide:hover .game-image img {
+    transform: scale(1.1);
+}
+
+.game-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.game-slide:hover .game-overlay {
+    opacity: 1;
+}
+
+.play-btn {
+    padding: var(--spacing-xs) var(--spacing-md);
+    background-color: var(--green);
+    color: var(--black);
+    border-radius: var(--border-radius-sm);
+    font-weight: 600;
+    font-size: var(--font-size-sm);
+    transition: all 0.3s ease;
+}
+
+.play-btn:hover {
+    background-color: var(--dark-green);
+    transform: scale(1.05);
+}
+
+.game-info {
+    padding: var(--spacing-md);
+}
+
+.game-info h3 {
+    color: var(--gold);
+    margin-bottom: var(--spacing-xs);
+    font-size: var(--font-size-md);
+}
+
+.game-rating {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+.star {
+    color: var(--dark-gold);
+    font-size: var(--font-size-sm);
+}
+
+.star.filled {
+    color: var(--gold);
+}
+
+.star.half-filled {
+    position: relative;
+    background: linear-gradient(90deg, var(--gold) 50%, var(--dark-gold) 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.rating-value {
+    margin-left: var(--spacing-xs);
+    color: var(--white);
+    font-size: var(--font-size-sm);
+}
+
+.slider-controls {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+.slider-prev,
+.slider-next {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: var(--white);
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.slider-prev:hover,
+.slider-next:hover {
+    background-color: var(--green);
+    color: var(--black);
+}
+
+.view-all-games {
+    text-align: center;
+    margin-top: var(--spacing-lg);
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .showcase-content {
+        flex-direction: column;
+    }
+    
+    .showcase-text {
+        order: 2;
+    }
+    
+    .showcase-image {
+        order: 1;
+        margin-bottom: var(--spacing-lg);
+    }
+}
+
+@media (max-width: 768px) {
+    .feature-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .feature-icon {
+        margin-bottom: var(--spacing-sm);
+    }
+    
+    .step-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--spacing-sm);
+    }
+    
+    .step-item:not(:last-child)::after {
+        left: 25px;
+        top: 50px;
+        height: calc(100% - 25px);
+    }
+    
+    .slider-container {
+        gap: var(--spacing-md);
+    }
+    
+    .game-slide {
+        flex: 0 0 200px;
+    }
+}
+
+@media (max-width: 576px) {
+    .tab-headers {
+        flex-direction: column;
+        gap: var(--spacing-sm);
+    }
+    
+    .platform-badges {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .game-slide {
+        flex: 0 0 170px;
+    }
+    
+    .game-image {
+        height: 120px;
+    }
+    
+    .game-info {
+        padding: var(--spacing-sm);
+    }
+    
+    .slider-prev,
+    .slider-next {
+        width: 30px;
+        height: 30px;
+        font-size: var(--font-size-md);
+    }
+} 

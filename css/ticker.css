@@ -1,0 +1,236 @@
+/* Ticker Styles */
+.ticker-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background-color: var(--black);
+    color: var(--white);
+    z-index: 1000;
+    overflow: hidden;
+    border-bottom: 1px solid var(--dark-gold);
+    display: flex;
+    align-items: center;
+}
+
+.ticker-wrapper {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 0 10px;
+}
+
+.ticker-currency {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    gap: 20px;
+    padding-right: 15px;
+}
+
+.ticker-currency div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.ticker-label {
+    color: var(--white);
+    font-size: 0.85rem;
+}
+
+.ticker-value {
+    color: var(--gold);
+    font-weight: 600;
+}
+
+.winners-label {
+    color: var(--gold);
+    font-weight: 600;
+    margin-right: 15px;
+    padding-left: 15px;
+    border-left: 1px solid rgba(255, 215, 0, 0.3);
+    white-space: nowrap;
+}
+
+.ticker-winners {
+    display: flex;
+    align-items: center;
+    position: relative;
+    flex: 1;
+    overflow: hidden;
+    height: 100%;
+}
+
+.ticker-winner {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    padding: 0 50px;
+    color: var(--white);
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    justify-content: flex-start;
+    /* Using a sequential timing animation instead of delay-based approach */
+    animation: none;
+}
+
+/* Sequential animation logic via JavaScript instead of CSS delays */
+
+.win-amount {
+    color: var(--green);
+    font-weight: 600;
+    margin: 0 5px;
+}
+
+@keyframes ticker-right {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    5% {
+        transform: translateX(-90%);
+        opacity: 0.2;
+    }
+    10% {
+        transform: translateX(-80%);
+        opacity: 0.4;
+    }
+    15% {
+        transform: translateX(-70%);
+        opacity: 0.6;
+    }
+    20% {
+        transform: translateX(-60%);
+        opacity: 0.8;
+    }
+    25% {
+        transform: translateX(-50%);
+        opacity: 1;
+    }
+    30% {
+        transform: translateX(-40%);
+        opacity: 1;
+    }
+    35% {
+        transform: translateX(-30%);
+        opacity: 1;
+    }
+    40% {
+        transform: translateX(-20%);
+        opacity: 1;
+    }
+    45% {
+        transform: translateX(-10%);
+        opacity: 1;
+    }
+    50% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    55% {
+        transform: translateX(10%);
+        opacity: 1;
+    }
+    60% {
+        transform: translateX(20%);
+        opacity: 1;
+    }
+    65% {
+        transform: translateX(30%);
+        opacity: 1;
+    }
+    70% {
+        transform: translateX(40%);
+        opacity: 1;
+    }
+    75% {
+        transform: translateX(50%);
+        opacity: 1;
+    }
+    80% {
+        transform: translateX(60%);
+        opacity: 0.8;
+    }
+    85% {
+        transform: translateX(70%);
+        opacity: 0.6;
+    }
+    90% {
+        transform: translateX(80%);
+        opacity: 0.4;
+    }
+    95% {
+        transform: translateX(90%);
+        opacity: 0.2;
+    }
+    100% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+}
+
+/* Animation class that will be applied via JavaScript */
+.animate-ticker {
+    animation: ticker-right 12s linear forwards;
+}
+
+/* Responsive Ticker */
+@media (max-width: 768px) {
+    .ticker-currency {
+        gap: 10px;
+    }
+    
+    .ticker-label, .ticker-value {
+        font-size: 0.75rem;
+    }
+    
+    .winners-label {
+        padding-left: 10px;
+        margin-right: 10px;
+        font-size: 0.75rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .ticker-container {
+        height: auto;
+        padding: 5px 0;
+    }
+    
+    .ticker-wrapper {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .ticker-currency {
+        overflow-x: auto;
+        width: 100%;
+        justify-content: flex-start;
+        padding: 0 10px 5px;
+    }
+    
+    .winners-label {
+        padding: 5px 10px 0;
+        margin: 0;
+        border-left: none;
+        border-top: 1px solid rgba(255, 215, 0, 0.3);
+        width: 100%;
+    }
+    
+    .ticker-winners {
+        width: 100%;
+        padding-top: 5px;
+    }
+    
+    .ticker-winner {
+        font-size: 0.75rem;
+    }
+    
+    .main-header {
+        top: 70px;
+    }
+} 

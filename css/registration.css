@@ -1,0 +1,213 @@
+/* Registration Page Specific Styles */
+
+.registration-section {
+    padding: var(--spacing-xl) 0;
+		padding-top: 5rem;
+}
+
+.registration-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-xl);
+    align-items: flex-start;
+}
+
+.registration-content {
+    flex: 1;
+    min-width: 300px;
+}
+
+.registration-content h1 {
+    color: var(--gold);
+    margin-bottom: var(--spacing-lg);
+}
+
+.registration-content p {
+    margin-bottom: var(--spacing-lg);
+}
+
+.benefits-list {
+    margin-top: var(--spacing-lg);
+}
+
+.benefits-list li {
+    margin-bottom: var(--spacing-md);
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+}
+
+.benefit-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 255, 0, 0.1);
+    border: 1px solid var(--green);
+    border-radius: var(--border-radius-circle);
+    color: var(--green);
+    font-size: var(--font-size-lg);
+    flex-shrink: 0;
+}
+
+.benefit-text {
+    color: var(--white);
+}
+
+.registration-form-container {
+    flex: 1;
+    min-width: 350px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: var(--border-radius-lg);
+    padding: var(--spacing-xl);
+    border: 1px solid var(--dark-gold);
+    box-shadow: var(--shadow-lg);
+}
+
+.registration-form-container h2 {
+    color: var(--gold);
+    margin-bottom: var(--spacing-lg);
+    text-align: center;
+}
+
+.registration-steps {
+    margin-bottom: var(--spacing-lg);
+    counter-reset: step;
+}
+
+.registration-steps li {
+    position: relative;
+    padding-left: 40px;
+    margin-bottom: var(--spacing-md);
+    color: var(--white);
+}
+
+.registration-steps li::before {
+    counter-increment: step;
+    content: counter(step);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 30px;
+    height: 30px;
+    background-color: var(--green);
+    color: var(--black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--border-radius-circle);
+    font-weight: 700;
+}
+
+.registration-form {
+    margin-top: var(--spacing-xl);
+}
+
+.password-strength {
+    display: block;
+    margin-top: 5px;
+    font-size: 0.8rem;
+    transition: all 0.3s ease;
+}
+
+.password-strength span {
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-weight: 600;
+}
+
+.password-strength.weak span {
+    background-color: rgba(220, 53, 69, 0.2);
+    color: #dc3545;
+}
+
+.password-strength.medium span {
+    background-color: rgba(255, 152, 0, 0.2);
+    color: #ff9800;
+}
+
+.password-strength.strong span {
+    background-color: rgba(40, 167, 69, 0.2);
+    color: #28a745;
+}
+
+.password-strength.very-strong span {
+    background-color: rgba(0, 123, 255, 0.2);
+    color: #007bff;
+}
+
+.password-meter {
+    height: 4px;
+    background-color: #e9ecef;
+    margin-top: 5px;
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.password-meter-bar {
+    height: 100%;
+    width: 0;
+    transition: width 0.3s ease;
+    border-radius: 2px;
+}
+
+.password-meter-bar.weak {
+    width: 25%;
+    background-color: #dc3545;
+}
+
+.password-meter-bar.medium {
+    width: 50%;
+    background-color: #ff9800;
+}
+
+.password-meter-bar.strong {
+    width: 75%;
+    background-color: #28a745;
+}
+
+.password-meter-bar.very-strong {
+    width: 100%;
+    background-color: #007bff;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .registration-container {
+        flex-direction: column;
+    }
+    
+    .registration-content,
+    .registration-form-container {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .benefits-list li {
+        gap: var(--spacing-sm);
+    }
+    
+    .benefit-icon {
+        width: 30px;
+        height: 30px;
+        font-size: var(--font-size-md);
+    }
+    
+    .registration-form-container {
+        padding: var(--spacing-lg);
+    }
+}
+
+@media (max-width: 576px) {
+    .registration-steps li {
+        padding-left: 30px;
+    }
+    
+    .registration-steps li::before {
+        width: 24px;
+        height: 24px;
+        font-size: var(--font-size-sm);
+    }
+} 
