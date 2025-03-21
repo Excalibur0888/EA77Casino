@@ -556,7 +556,7 @@
 }
 
 /* Responsive adjustments */
-@media (max-width: 992px) {
+@media (max-width: 1100px) {
     .faq-container {
         grid-template-columns: 1fr;
     }
@@ -576,7 +576,7 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1100px) {
     .contact-method,
     .hours-item {
         padding: var(--spacing-md);
@@ -722,6 +722,210 @@
     }
     100% {
         transform: scale(30, 30) translate(-50%, -50%);
+        opacity: 0;
+    }
+}
+
+/* Success Animation */
+@keyframes successCheckmark {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes successBackground {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes successText {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.form-success-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    padding: 20px;
+}
+
+.form-success-overlay.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+.success-checkmark-container {
+    position: relative;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+    width: 80px;
+    height: 80px;
+    margin-bottom: var(--spacing-lg);
+}
+
+.success-background {
+    position: absolute;
+    transform: translate(-50%, -50%) scale(0);
+    width: 60px;
+    height: 60px;
+    background-color: var(--green);
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.success-overlay-active .success-background {
+    animation: successBackground 0.5s forwards;
+}
+
+.success-checkmark {
+    position: absolute;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+    transform: translate(-50%, -50%) scale(0);
+    color: white;
+    font-size: 40px;
+    z-index: 2;
+    opacity: 0;
+}
+
+.success-overlay-active .success-checkmark {
+    animation: successCheckmark 0.5s 0.3s forwards;
+}
+
+.success-content {
+    position: relative;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+    z-index: 20;
+    width: 100%;
+    text-align: center;
+    max-width: 500px;
+}
+
+.success-message {
+    color: var(--white);
+    font-size: 1.5rem;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(20px);
+    margin-bottom: var(--spacing-md);
+    font-weight: bold;
+    z-index: 10;
+    position: relative;
+}
+
+.success-overlay-active .success-message {
+    animation: successText 0.5s 0.6s forwards;
+}
+
+.success-details {
+    color: var(--gold);
+    font-size: 1rem;
+    text-align: center;
+    max-width: 80%;
+    opacity: 0;
+    transform: translateY(20px);
+    margin-bottom: var(--spacing-lg);
+    z-index: 10;
+    position: relative;
+}
+
+.success-overlay-active .success-details {
+    animation: successText 0.5s 0.8s forwards;
+}
+
+.success-button {
+    padding: var(--spacing-sm) var(--spacing-lg);
+    background-color: var(--gold);
+    color: var(--black);
+    border: none;
+    border-radius: var(--border-radius-md);
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    opacity: 0;
+    transform: translateY(20px);
+    margin-top: var(--spacing-md);
+    z-index: 10;
+    position: relative;
+}
+
+.success-overlay-active .success-button {
+    animation: successText 0.5s 1s forwards;
+}
+
+.success-button:hover {
+    background-color: var(--green);
+    color: var(--white);
+    transform: scale(1.05);
+}
+
+/* Confetti animation */
+.confetti-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 99;
+}
+
+.confetti {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    opacity: 0;
+}
+
+.confetti-animation {
+    animation: confettiFall 3s ease-in-out forwards;
+}
+
+@keyframes confettiFall {
+    0% {
+        transform: translateY(-100px) rotate(0deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(calc(100vh)) rotate(360deg);
         opacity: 0;
     }
 } 

@@ -111,6 +111,17 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
         
+        // Setup success animation elements
+        const successOverlay = document.querySelector('.form-success-overlay');
+        const successDoneBtn = document.getElementById('successDoneBtn');
+        
+        // Handle done button click
+        if (successDoneBtn) {
+            successDoneBtn.addEventListener('click', () => {
+                hideSuccessOverlay();
+            });
+        }
+        
         contactForm.addEventListener('submit', function(e) {
             e.preventDefault();
             
@@ -144,7 +155,8 @@ document.addEventListener('DOMContentLoaded', function() {
             
             // Simulate form submission with a delay
             setTimeout(() => {
-                showNotification('Thank you for your message! Our support team will contact you soon.', 'success');
+                // Show success animation instead of notification
+                showSuccessOverlay();
                 submitButton.innerHTML = '<i class="fas fa-check"></i> Sent!';
                 
                 // Reset the form after successful submission
@@ -157,9 +169,119 @@ document.addEventListener('DOMContentLoaded', function() {
                     formGroups.forEach(group => {
                         group.classList.remove('input-focused');
                     });
+                    
+                    // Reset file label
+                    if (fileLabel) {
+                        fileLabel.innerHTML = `<i class="fas fa-upload"></i> Choose File`;
+                    }
                 }, 2000);
             }, 1500);
         });
+        
+        // Function to show success overlay with animation
+        function showSuccessOverlay() {
+            if (successOverlay) {
+                // Create and animate confetti
+                createConfetti();
+                
+                // Show overlay
+                successOverlay.classList.add('visible');
+                
+                // Start animations after a small delay
+                setTimeout(() => {
+                    successOverlay.classList.add('success-overlay-active');
+                    
+                    // Ensure text elements have proper styling
+                    const successMessage = successOverlay.querySelector('.success-message');
+                    const successDetails = successOverlay.querySelector('.success-details');
+                    const successButton = successOverlay.querySelector('.success-button');
+                    
+                    if (successMessage) successMessage.style.display = 'block';
+                    if (successDetails) successDetails.style.display = 'block';
+                    if (successButton) successButton.style.display = 'block';
+                }, 100);
+            }
+        }
+        
+        // Function to hide success overlay
+        function hideSuccessOverlay() {
+            if (successOverlay) {
+                successOverlay.classList.remove('success-overlay-active');
+                
+                // Hide overlay after animations complete
+                setTimeout(() => {
+                    successOverlay.classList.remove('visible');
+                    
+                    // Clear confetti
+                    const confettiContainer = document.getElementById('confettiContainer');
+                    if (confettiContainer) {
+                        confettiContainer.innerHTML = '';
+                    }
+                }, 500);
+            }
+        }
+        
+        // Function to create confetti effect
+        function createConfetti() {
+            const confettiContainer = document.getElementById('confettiContainer');
+            if (!confettiContainer) return;
+            
+            // Clear any existing confetti
+            confettiContainer.innerHTML = '';
+            
+            // Colors for confetti
+            const colors = ['#FFD700', '#17A2B8', '#ffffff', '#ffc107', '#28a745'];
+            
+            // Create confetti pieces
+            for (let i = 0; i < 100; i++) {
+                const confetti = document.createElement('div');
+                confetti.classList.add('confetti');
+                
+                // Random position
+                const leftPos = Math.random() * 100;
+                confetti.style.left = `${leftPos}%`;
+                
+                // Random size
+                const size = Math.random() * 10 + 5;
+                confetti.style.width = `${size}px`;
+                confetti.style.height = `${size}px`;
+                
+                // Random color
+                const colorIndex = Math.floor(Math.random() * colors.length);
+                confetti.style.backgroundColor = colors[colorIndex];
+                
+                // Random shape
+                const shapes = ['circle', 'square', 'triangle'];
+                const shapeIndex = Math.floor(Math.random() * shapes.length);
+                
+                if (shapes[shapeIndex] === 'circle') {
+                    confetti.style.borderRadius = '50%';
+                } else if (shapes[shapeIndex] === 'triangle') {
+                    confetti.style.width = '0';
+                    confetti.style.height = '0';
+                    confetti.style.backgroundColor = 'transparent';
+                    confetti.style.borderLeft = `${size/2}px solid transparent`;
+                    confetti.style.borderRight = `${size/2}px solid transparent`;
+                    confetti.style.borderBottom = `${size}px solid ${colors[colorIndex]}`;
+                }
+                
+                // Random animation duration
+                const duration = Math.random() * 2 + 2;
+                confetti.style.animationDuration = `${duration}s`;
+                
+                // Random animation delay
+                const delay = Math.random() * 0.5;
+                confetti.style.animationDelay = `${delay}s`;
+                
+                // Add to container
+                confettiContainer.appendChild(confetti);
+                
+                // Start animation in next frame
+                setTimeout(() => {
+                    confetti.classList.add('confetti-animation');
+                }, 10);
+            }
+        }
     }
     
     // Chat widget functionality
